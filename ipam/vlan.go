@@ -77,5 +77,8 @@ func setVlanParams(req *http.Request, opts models.ListVlanRequest) {
 	if opts.Group != "" {
 		q.Set("group", opts.Group)
 	}
+	if opts.SiteID != 0 {
+		q.Set("site_id", strconv.Itoa(opts.SiteID))
+	}
 	req.URL.RawQuery = q.Encode()
 }
