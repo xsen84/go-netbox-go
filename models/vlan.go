@@ -24,11 +24,12 @@ type Vlan struct {
 	PrefixCount  int         `json:"prefix_count"`
 	Role         Role        `json:"role"`
 	Site         Site        `json:"site"`
-	Status       interface{} `json:"status"`
+	Status       VlanStatus `json:"status"`
 	Tenant       Tenant      `json:"tenant"`
 }
 
 type ListVlanRequest struct {
+	SiteID	int
 	common.ListParams
 	Group string `json:"group"`
 }
@@ -36,4 +37,9 @@ type ListVlanRequest struct {
 type ListVlanResponse struct {
 	common.ReturnValues
 	Results []Vlan `json:"results"`
+}
+
+type VlanStatus struct {
+	Label string `json:"label"`
+	Value string `json:"value"`
 }
