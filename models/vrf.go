@@ -3,7 +3,7 @@
 
 package models
 
-import "github.com/sapcc/go-netbox-go/common"
+import "github.com/xsen84/go-netbox-go/common"
 
 type NestedVRF struct {
 	ID          int    `json:"id"`

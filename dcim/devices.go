@@ -12,7 +12,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/sapcc/go-netbox-go/models"
+	"github.com/xsen84/go-netbox-go/models"
 )
 
 func (c *Client) ListDevices(opts models.ListDevicesRequest) (*models.ListDevicesResponse, error) {

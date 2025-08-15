@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/sapcc/go-netbox-go/models"
+	"github.com/xsen84/go-netbox-go/models"
 )
 
 func (c *Client) ListVRFs(opts models.ListVRFsRequest) (*models.ListVRFsResponse, error) {

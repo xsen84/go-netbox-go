@@ -1,4 +1,4 @@
-module github.com/sapcc/go-netbox-go
+module github.com/xsen84/go-netbox-go
 
 go 1.24
 

@@ -10,11 +10,11 @@ import (
 	"github.com/seborama/govcr"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/sapcc/go-netbox-go/dcim"
-	"github.com/sapcc/go-netbox-go/ipam"
-	"github.com/sapcc/go-netbox-go/models"
-	"github.com/sapcc/go-netbox-go/tenancy"
-	"github.com/sapcc/go-netbox-go/virtualization"
+	"github.com/xsen84/go-netbox-go/dcim"
+	"github.com/xsen84/go-netbox-go/ipam"
+	"github.com/xsen84/go-netbox-go/models"
+	"github.com/xsen84/go-netbox-go/tenancy"
+	"github.com/xsen84/go-netbox-go/virtualization"
 )
 
 func TestClient_GetVirtualMachine(t *testing.T) {

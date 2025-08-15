@@ -10,8 +10,8 @@ import (
 	"github.com/seborama/govcr"
 	"github.com/stretchr/testify/assert"
 
-	"github.com/sapcc/go-netbox-go/models"
-	"github.com/sapcc/go-netbox-go/tenancy"
+	"github.com/xsen84/go-netbox-go/models"
+	"github.com/xsen84/go-netbox-go/tenancy"
 )
 
 func TestClient_ListTenantGroups(t *testing.T) {

@@ -7,7 +7,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/sapcc/go-netbox-go/common"
+	"github.com/xsen84/go-netbox-go/common"
 )
 
 type NestedIPAddress struct {

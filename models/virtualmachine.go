@@ -6,7 +6,7 @@ package models
 import (
 	"encoding/json"
 
-	"github.com/sapcc/go-netbox-go/common"
+	"github.com/xsen84/go-netbox-go/common"
 )
 
 type NestedVirtualMachine struct {

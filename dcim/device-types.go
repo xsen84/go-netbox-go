@@ -10,7 +10,7 @@ import (
 	"io"
 	"net/http"
 
-	"github.com/sapcc/go-netbox-go/models"
+	"github.com/xsen84/go-netbox-go/models"
 )
 
 func (c *Client) ListDeviceTypes(opts models.ListDeviceTypesRequest) (*models.ListDeviceTypesResponse, error) {

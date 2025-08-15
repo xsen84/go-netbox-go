@@ -11,7 +11,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/sapcc/go-netbox-go/models"
+	"github.com/xsen84/go-netbox-go/models"
 )
 
 func (c *Client) GetTenant(id int) (*models.Tenant, error) {

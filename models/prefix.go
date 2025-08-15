@@ -4,7 +4,7 @@
 package models
 
 import (
-	"github.com/sapcc/go-netbox-go/common"
+	"github.com/xsen84/go-netbox-go/common"
 )
 
 type Status struct {

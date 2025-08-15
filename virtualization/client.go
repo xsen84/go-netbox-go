@@ -4,8 +4,8 @@
 package virtualization
 
 import (
-	"github.com/sapcc/go-netbox-go/common"
-	"github.com/sapcc/go-netbox-go/models"
+	"github.com/xsen84/go-netbox-go/common"
+	"github.com/xsen84/go-netbox-go/models"
 )
 
 const basePath = "/api/virtualization/"

@@ -3,7 +3,7 @@
 
 package models
 
-import "github.com/sapcc/go-netbox-go/common"
+import "github.com/xsen84/go-netbox-go/common"
 
 type NestedVLAN struct {
 	ID          int    `json:"id"`
@@ -24,12 +24,12 @@ type Vlan struct {
 	PrefixCount  int         `json:"prefix_count"`
 	Role         Role        `json:"role"`
 	Site         Site        `json:"site"`
-	Status       VlanStatus `json:"status"`
+	Status       VlanStatus  `json:"status"`
 	Tenant       Tenant      `json:"tenant"`
 }
 
 type ListVlanRequest struct {
-	SiteID	int
+	SiteID int
 	common.ListParams
 	Group string `json:"group"`
 }

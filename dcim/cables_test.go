@@ -10,8 +10,8 @@ import (
 
 	"github.com/seborama/govcr"
 
-	"github.com/sapcc/go-netbox-go/dcim"
-	"github.com/sapcc/go-netbox-go/models"
+	"github.com/xsen84/go-netbox-go/dcim"
+	"github.com/xsen84/go-netbox-go/models"
 )
 
 func TestClient_GetCable(t *testing.T) {
