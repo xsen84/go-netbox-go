@@ -50,7 +50,7 @@ type WriteablePrefix struct {
 }
 
 type ListPrefixesRequest struct {
-	SiteID        int
+	SiteID int
 	common.ListParams
 	Role          string
 	Region        string
