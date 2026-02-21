@@ -19,6 +19,11 @@ type NetboxAPI interface {
 	// tenants
 	GetTenant(id int) (*models.Tenant, error)
 	ListTenants(opts models.ListTenantsRequest) (*models.ListTenantsResponse, error)
+
+	// contacts
+	ListContacts(opts models.ListContactsRequest) (*models.ListContactsResponse, error)
+	ListContactRoles(opts models.ListContactRolesRequest) (*models.ListContactRolesResponse, error)
+	ListContactAssignments(opts models.ListContactAssignmentsRequest) (*models.ListContactAssignmentsResponse, error)
 }
 
 type Client struct {
