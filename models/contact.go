@@ -74,17 +74,23 @@ type ListContactRolesRequest struct {
 	Offset int
 }
 
+// ContactPriority defines the label/value structure for Contact Priority
+type ContactPriority struct {
+	Label string `json:"label"`
+	Value string `json:"value"`
+}
+
 // ContactAssignment defines the structure for a Contact assigned to a given Netbox object
 type ContactAssignment struct {
-	Id          int         `json:"id"`
-	Url         string      `json:"url"`
-	Display     string      `json:"display"`
-	Object      interface{} `json:"object"`
-	Contact     Contact     `json:"contact"`
-	Role        ContactRole `json:"role"`
-	Priority    string      `json:"priority"`
-	Created     string      `json:"created"`
-	LastUpdated string      `json:"last_updated"`
+	Id          int              `json:"id"`
+	Url         string           `json:"url"`
+	Display     string           `json:"display"`
+	Object      interface{}      `json:"object"`
+	Contact     Contact          `json:"contact"`
+	Role        ContactRole      `json:"role"`
+	Priority    *ContactPriority `json:"priority"`
+	Created     string           `json:"created"`
+	LastUpdated string           `json:"last_updated"`
 }
 
 // ListContactAssignmentsResponse defines the response for listing contact assignments
@@ -97,9 +103,10 @@ type ListContactAssignmentsResponse struct {
 
 // ListContactAssignmentsRequest defines filters that can be applied to list contact assignments
 type ListContactAssignmentsRequest struct {
-	ContactId int
-	RoleId    int
-	ObjectId  int
-	Limit     int
-	Offset    int
+	ContactId   int
+	RoleId      int
+	ObjectId    int
+	ContentType string
+	Limit       int
+	Offset      int
 }

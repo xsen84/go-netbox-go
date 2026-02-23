@@ -35,6 +35,9 @@ func (c *Client) ListContactAssignments(opts models.ListContactAssignmentsReques
 	if opts.Offset > 0 {
 		query.Add("offset", fmt.Sprintf("%d", opts.Offset))
 	}
+	if opts.ContentType != "" {
+		query.Add("content_type", opts.ContentType)
+	}
 	request.URL.RawQuery = query.Encode()
 
 	response, err := c.HTTPClient().Do(request)
