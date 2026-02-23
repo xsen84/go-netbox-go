@@ -26,6 +26,9 @@ func (c *Client) ListContactAssignments(opts models.ListContactAssignmentsReques
 	if opts.RoleId != 0 {
 		query.Add("role_id", fmt.Sprintf("%d", opts.RoleId))
 	}
+	if opts.ObjectId != 0 {
+		query.Add("object_id", fmt.Sprintf("%d", opts.ObjectId))
+	}
 	if opts.Limit > 0 {
 		query.Add("limit", fmt.Sprintf("%d", opts.Limit))
 	}

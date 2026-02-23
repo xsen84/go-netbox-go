@@ -99,6 +99,7 @@ type ListContactAssignmentsResponse struct {
 type ListContactAssignmentsRequest struct {
 	ContactId int
 	RoleId    int
+	ObjectId  int
 	Limit     int
 	Offset    int
 }
