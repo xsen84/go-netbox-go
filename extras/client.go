@@ -15,6 +15,13 @@ type NetboxAPI interface {
 
 	// tags
 	ListTags(opts models.ListTagsRequest) (*models.ListTagsResponse, error)
+
+	// custom fields
+	ListCustomFields(opts models.ListCustomFieldsRequest) (*models.ListCustomFieldsResponse, error)
+
+	// custom field choice sets
+	ListCustomFieldChoiceSets(opts models.ListCustomFieldChoiceSetsRequest) (*models.ListCustomFieldChoiceSetsResponse, error)
+	GetCustomFieldChoiceSet(id int) (*models.CustomFieldChoiceSet, error)
 }
 
 type Client struct {
